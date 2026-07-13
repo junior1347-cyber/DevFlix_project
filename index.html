@@ -11,26 +11,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
     </head>
-    <body><script id="__bs_script__">//<![CDATA[
-  (function() {
-    try {
-      var script = document.createElement('script');
-      if ('async') {
-        script.async = true;
-      }
-      script.src = '/browser-sync/browser-sync-client.js?v=3.0.4'.replace("HOST", location.hostname);
-      if (document.body) {
-        document.body.appendChild(script);
-      } else if (document.head) {
-        document.head.appendChild(script);
-      }
-    } catch (e) {
-      console.error("Browsersync: could not append script tag", e);
-    }
-  })()
-//]]></script>
-
  	<header>
 		<p class="top">Gerar.com - Seu gerador com inteligência artificial 🤖</p>
 	</header>
@@ -41,14 +23,12 @@
 			<span class="parte2">com um prompt</span>
 		</h1>
 		<p class="down">Descreva o seu negócio e veja a IA criar uma página profissional em segundos</p>
-		<form id="form-gerador">
-			<div class="input-area">
-				<input type="text" id="prompt-usuario" placeholder="No que você está pensando?"/>
-				<button type="submit">Gerar Página</button>
-			</div>
-		</form>
+		<div class="input-area" id="gerador">
+			<input type="text" id="prompt-usuario" placeholder="No que você está pensando?"/>
+			<button type="submit">Gerar Página</button>
+		</div>
 			<div class="code-area">
-				<pre><code class="bloco-codigo"></code></pre>
+				<p class="bloco-codigo"></p>
 				<iframe id="preview-site" class="bloco-site" sandbox"allow-scripts"></iframe>
 			</div>
 	</main>
