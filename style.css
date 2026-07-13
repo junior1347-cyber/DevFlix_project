@@ -5,12 +5,12 @@
     box-sizing: border-box;
 } 
 body {
-  font-family: "Geist Pixel", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:"ELSH" 0;
-  background: #000000
+    font-family: "Geist Pixel", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"ELSH" 0;
+    background: #000000
 }
 header {
     .top {
@@ -22,10 +22,10 @@ header {
     }
 }
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     .titulo {
         text-align: center;
         margin: 20px 0;
@@ -41,9 +41,6 @@ main {
         color: #ffffff;
         text-align: center;
         margin: 20px;
-    }
-    form {
-        width: min(100%, 500px);
     }
    .input-area {
         display: flex;
@@ -81,16 +78,16 @@ main {
         transform: scale(0.95);
     }
     .code-area {
-    width: 95%;
-    max-width: 1400px;
-    min-height: 550px;
-    display: flex;
-    padding: 10px;
-    margin-top: 40px;
-    background: #111114;
-    border-radius: 12px;
-    border: 1px solid #27272a;
-    gap: 24px;
+        width: 95%;
+        max-width: 1400px;
+        min-height: 550px;
+        display: flex;
+        padding: 10px;
+        margin-top: 40px;
+        background: #111114;
+        border-radius: 12px;
+        border: 1px solid #27272a;
+        gap: 24px;
     }
     .bloco-codigo {
         font-size: 12px;
@@ -117,6 +114,3 @@ main {
     }
 
 }
-
-
-
