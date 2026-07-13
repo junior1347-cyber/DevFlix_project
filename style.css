@@ -81,7 +81,9 @@ main {
         transform: scale(0.95);
     }
     .code-area {
-    width: 1400px;
+    width: 95%;
+    max-width: 1400px;
+    min-height: 550px;
     display: flex;
     padding: 10px;
     margin-top: 40px;
@@ -97,19 +99,24 @@ main {
         font-variation-settings: "ELSH" 0;
         color: #00d008;
         width: 30%;
+        flex-shrink: 0%;
         background: #27272a;
         padding: 16px;
         border-radius: 12px;
         border: 1px solid #27272a;
         white-space: pre-wrap;
-        overflow: auto;
+        overflow-y: auto;
+    	max-height: 600px;
     }
     .bloco-site {
-        width: 70%;
+        width: 100%;
+    	min-height: 500px;
         background: #1e1e1e;
         border-radius: 12px;
         border: 1px solid #1e1e1e;
     }
 
 }
+
+
 
