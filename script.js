@@ -1,10 +1,8 @@
-import { xai } from "@ai-sdk/xai";
-import { generateText } from "ai";
-
-const { text } = await generateText({
-  model: xai.responses("grok-4.5"),
-  prompt: "Fix this function and explain the bug: function median(a){a.sort();return a[a.length/2]}",
-});
-
-console.log(text);
+curl https://api.x.ai/v1/responses \
+  -H "Authorization: Bearer $XAI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "grok-4.5",
+    "input": "Fix this function and explain the bug: function median(a){a.sort();return a[a.length/2]}"
+  }'
 
