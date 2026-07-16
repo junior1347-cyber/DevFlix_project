@@ -97,7 +97,7 @@ main {
 		font-weight: 400;
 		font-variation-settings: "ELSH" 0;
 		color: #00d008;
-		width: 30%;
+		width: 50%;
 		flex-shrink: 0%;
 		background: #27272a;
 		padding: 16px;
@@ -105,6 +105,7 @@ main {
 		border: 1px solid #27272a;
 		white-space: pre-wrap;
 		overflow-y: auto;
+		scrollbar-color: #888 #f1f1f1;
 		max-height: 600px;
 	}
 	.bloco-site {
